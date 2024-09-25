@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    overflow-x: hidden;
+}
+
+.a1{
+    background-image: url("nbackground.jpg");
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 30px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav img{
+    max-width: 150px;
+}
+
+.a122{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.a112, .a113 {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.a112 {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.a113{
+    background-color: rgb(228, 16, 16);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.a12{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.a121, .a1212, .a123 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.a124 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.a1241, .a1242 {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+}
+
+.a1241 {
+    background-color: black;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+.a1242 {
+    background-color: rgb(228, 16, 16);
+    color: white;
+    cursor: pointer;
+}
+
+.b1, .c1, .e1, .f1 {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.b111, .c12, .e12, .f11 {
+    text-align: center;
+    color: white;
+    max-width: 500px;
+}
+
+.b11, .c121, .e121, .f111 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.b12, .c122, .e122, .f112 {
+    font-size: 1.2em;
+}
+
+.b13, .e13 {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.b13 video, .e13 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.g1 {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.g1 h1 {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .b11, .c121, .e121, .f111 {
+        font-size: 1.5em;
+    }
+    .b12, .c122, .e122, .f112 {
+        font-size: 1em;
+    }
+    .a121, .a1212, .a123 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav img {
+        max-width: 100px;
+    }
+    .b11, .c121, .e121, .f111 {
+        font-size: 1.2em;
+    }
+    .b12, .c122, .e122, .f112 {
+        font-size: 0.9em;
+    }
+    .a121, .a1212, .a123 {
+        font-size: 1em;
+    }
+    .a1241, .a1242 {
+        font-size: 1em;
+    }
+}
